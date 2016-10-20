@@ -1,21 +1,24 @@
-var paused_count =0;
+var paused_count = 0;
 var resumed_count = 0;
 var launched_count = 0;
-var key="pen";
-var value="blue";
-var key="book";
-var value="black";
-var key="cat";
-var value="yellow";
-var key="dog";
-var value="red";
-var key="mouse";
-var value="black";
-var key = “pen”;
+var key = "pen";
+var value = "blue";
+var key = "book";
+var value = "black";
+var key = "cat";
+var value = "yellow";
+var key = "dog";
+var value = "red";
+var key = "mouse";
+var value = "black";
+
 var value = window.localStorage.getItem(key);
-
 window.localStorage.setItem( key, value );
-
+var key = prompt("Please enter your key");
+if (key != null) {
+    document.getElementById("demo").innerHTML =
+    "colour " + value + ;
+}
 
 	function updateDisplay() {
 		$("#launched").text("Application launched: " + launched_count);
