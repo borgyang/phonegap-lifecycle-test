@@ -14,8 +14,8 @@ alert("Hello!");
 		$("#launched").text("Application launched: " + launched_count);
 		$("#resumed").text("Application paused: " + paused_count);
 		$("#paused").text("Application resumed: " + resumed_count);
-        var value = window.localStorage.getItem(key);
         window.localStorage.setItem( key, value );
+        var value = window.localStorage.getItem(key);
         alert("value");
 	}
 
