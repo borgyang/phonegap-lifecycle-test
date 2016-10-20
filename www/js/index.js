@@ -11,7 +11,7 @@ var key="dog";
 var value="red";
 var key="mouse";
 var value="black";
-window.prompt("sometext","defaultText")
+
 
 var key = prompt("Please enter your key");
 if (key != null) {
