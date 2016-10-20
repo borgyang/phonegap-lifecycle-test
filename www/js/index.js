@@ -11,21 +11,12 @@ var key="dog";
 var value="red";
 var key="mouse";
 var value="black";
+var key = “pen”;
+var value = window.localStorage.getItem(key);
 
-
-var key = prompt("Please enter your key");
-if (key != null) {
-    document.getElementById("demo").innerHTML =
-    "you colour " + value ;
-}
 window.localStorage.setItem( key, value );
 
-    function onLoad() {
-        document.addEventListener("deviceready", onDeviceReady, false);
-		console.log("device ready");
-        
-    }
-	
+
 	function updateDisplay() {
 		$("#launched").text("Application launched: " + launched_count);
 		$("#resumed").text("Application paused: " + paused_count);
